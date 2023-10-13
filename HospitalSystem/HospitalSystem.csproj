@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE3D7235-C425-4667-905E-38865B51890B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HospitalSystem</RootNamespace>
+    <AssemblyName>HospitalSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>C:\Users\pc\3D Objects\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4ADE724128AAADABBBEBFF0D70C68E49633B17CE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HospitalSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.3.1.30\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.30\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.30\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.30\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.30.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.30\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="models\AppointmentsModel.cs" />
+    <Compile Include="models\AuthorizationModel.cs" />
+    <Compile Include="models\BillsModel.cs" />
+    <Compile Include="models\IAuthorizationModel.cs" />
+    <Compile Include="models\PatientsModel.cs" />
+    <Compile Include="models\DoctorsModel.cs" />
+    <Compile Include="models\entities\Appointment.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\Bill.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\Doctor.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\HospitalSystem.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalSystem.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\HospitalSystem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\HospitalSystem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalSystem.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\Patient.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\Payment.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\Role.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\Service.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\entities\User.cs">
+      <DependentUpon>HospitalSystem.tt</DependentUpon>
+    </Compile>
+    <Compile Include="models\IAppointmentsModel.cs" />
+    <Compile Include="models\IBillsModel.cs" />
+    <Compile Include="models\IPatientsModel.cs" />
+    <Compile Include="models\IDoctorsModel.cs" />
+    <Compile Include="models\IPaymentsModel.cs" />
+    <Compile Include="models\IServicesModel.cs" />
+    <Compile Include="models\IUsersModel.cs" />
+    <Compile Include="models\PaymentsModel.cs" />
+    <Compile Include="models\ServicesModel.cs" />
+    <Compile Include="models\UsersModel.cs" />
+    <Compile Include="presenters\admin\DoctorsPresenter.cs" />
+    <Compile Include="presenters\AuthorizationPresenter.cs" />
+    <Compile Include="presenters\ConnectionPresenter.cs" />
+    <Compile Include="presenters\IPresenter.cs" />
+    <Compile Include="presenters\admin\QueryPresenter.cs" />
+    <Compile Include="presenters\admin\ServicesPresenter.cs" />
+    <Compile Include="support\Core.cs" />
+    <Compile Include="support\CurrentUser.cs" />
+    <Compile Include="support\Global.cs" />
+    <Compile Include="support\StringCryptography.cs" />
+    <Compile Include="support\UserFeedback.cs" />
+    <Compile Include="views\accountant\IAccountant.cs" />
+    <Compile Include="views\accountant\IBillsForm.cs" />
+    <Compile Include="views\accountant\IPaymentDetailsForm.cs" />
+    <Compile Include="views\accountant\IReportsForm.cs" />
+    <Compile Include="views\accountant\BillsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\accountant\PaymentsAccount.Designer.cs">
+      <DependentUpon>BillsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\accountant\PaymentDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\accountant\PaymentDetailsForm.Designer.cs">
+      <DependentUpon>PaymentDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\accountant\ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\accountant\ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\admin\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\EditDoctorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\admin\EditDoctorsForm.Designer.cs">
+      <DependentUpon>EditDoctorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\EditServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\admin\EditServicesForm.Designer.cs">
+      <DependentUpon>EditServicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\IAdmin.cs" />
+    <Compile Include="views\admin\ICommandPrompt.cs" />
+    <Compile Include="views\admin\IConnectionSettingsView.cs" />
+    <Compile Include="views\admin\IEditDoctorsView.cs" />
+    <Compile Include="views\admin\IEditServicesView.cs" />
+    <Compile Include="views\AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionSettings.cs" />
+    <Compile Include="views\accountant\AccountantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\accountant\AccountantForm.Designer.cs">
+      <DependentUpon>AccountantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEntities.cs" />
+    <Compile Include="views\admin\CommandPromtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\admin\CommandPromtForm.Designer.cs">
+      <DependentUpon>CommandPromtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\admin\ConnectionSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\admin\ConnectionSettingForm.Designer.cs">
+      <DependentUpon>ConnectionSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\doctor\DoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\doctor\DoctorForm.Designer.cs">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Programm.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="views\doctor\IDoctor.cs" />
+    <Compile Include="views\doctor\IPatientsView.cs" />
+    <Compile Include="views\doctor\NewAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\doctor\NewAppointment.Designer.cs">
+      <DependentUpon>NewAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\doctor\PatientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\doctor\PatientsForm.Designer.cs">
+      <DependentUpon>PatientsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\IAuthorizationView.cs" />
+    <Compile Include="views\IQueryView.cs" />
+    <Compile Include="views\IView.cs" />
+    <Compile Include="views\styleForms\AccountStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\styleForms\AccountStyleForm.Designer.cs">
+      <DependentUpon>AccountStyleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\styleForms\MainMenuStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\styleForms\MainMenuStyleForm.Designer.cs">
+      <DependentUpon>MainMenuStyleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagram.cs" />
+    <Compile Include="views\styleForms\PatientsStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\styleForms\PatientsStyleForm.Designer.cs">
+      <DependentUpon>PatientsStyleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\styleForms\ProgrammStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\styleForms\ProgrammStyleForm.Designer.cs">
+      <DependentUpon>ProgrammStyleForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="views\admin\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\EditDoctorsForm.resx">
+      <DependentUpon>EditDoctorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\EditServicesForm.resx">
+      <DependentUpon>EditServicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\CommandPromtForm.resx">
+      <DependentUpon>CommandPromtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\admin\ConnectionSettingForm.resx">
+      <DependentUpon>ConnectionSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\accountant\AccountantForm.resx">
+      <DependentUpon>AccountantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\doctor\DoctorForm.resx">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\styleForms\AccountStyleForm.resx">
+      <DependentUpon>AccountStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\styleForms\MainMenuStyleForm.resx">
+      <DependentUpon>MainMenuStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="views\styleForms\PatientsStyleForm.resx">
+      <DependentUpon>PatientsStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\styleForms\ProgrammStyleForm.resx">
+      <DependentUpon>ProgrammStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HospitalSystem_TemporaryKey.pfx" />
+    <EntityDeploy Include="models\entities\HospitalSystem.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HospitalSystem.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="models\entities\HospitalSystem.edmx.diagram">
+      <DependentUpon>HospitalSystem.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="presenters\accountant\" />
+    <Folder Include="presenters\doctor\" />
+    <Folder Include="resources\" />
+    <Folder Include="views\representations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="models\entities\HospitalSystem.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HospitalSystem.edmx</DependentUpon>
+      <LastGenOutput>HospitalSystem.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="models\entities\HospitalSystem.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HospitalSystem.edmx</DependentUpon>
+      <LastGenOutput>HospitalSystem.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

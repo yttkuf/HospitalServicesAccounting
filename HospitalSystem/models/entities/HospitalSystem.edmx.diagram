@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="af84fabae15b4cec8504569e6f7f0b8d" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="ServicesAccountingModel.Appointment" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServicesAccountingModel.Bill" Width="1.5" PointX="3.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServicesAccountingModel.Doctor" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServicesAccountingModel.Patient" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServicesAccountingModel.Payment" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServicesAccountingModel.Role" Width="1.5" PointX="1.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServicesAccountingModel.Service" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServicesAccountingModel.User" Width="1.5" PointX="1.5" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="ServicesAccountingModel.FK_Appointments_Appointments" ManuallyRouted="false" />
+        <AssociationConnector Association="ServicesAccountingModel.FK_Appointments_Patients" ManuallyRouted="false" />
+        <AssociationConnector Association="ServicesAccountingModel.FK_Appointments_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="ServicesAccountingModel.FK_Payments_Bills" ManuallyRouted="false" />
+        <AssociationConnector Association="ServicesAccountingModel.FK_Doctors_Doctors" ManuallyRouted="false" />
+        <AssociationConnector Association="ServicesAccountingModel.FK_Payments_Patients" ManuallyRouted="false" />
+        <AssociationConnector Association="ServicesAccountingModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
